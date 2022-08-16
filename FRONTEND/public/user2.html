@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN DASHBOARD</title>
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+     <!----------------------------DASHBOARD SECTION-------------- -->
+     <div class="dashboard">
+        <div class="left-nav">
+            <div class="up-list-items">
+                <h5>
+                    <div  id="logo-role">
+                        <ion-icon name="logo-stackoverflow"></ion-icon><h3 id="role"></h3>
+
+                    </div>
+                </h5>
+                <h5 id="home-tab"> <ion-icon name="home-outline" class="icon-item"></ion-icon> HOME</h5>
+                <h5><ion-icon name="notifications-circle-outline" class="icon-item"></ion-icon>NOTIFICATION</h5>
+                <!-- <h5><ion-icon name="people-outline" class="icon-item"></ion-icon>TEAMS</h5>
+                <h5><ion-icon name="folder-open-outline" class="icon-item"></ion-icon>PROJECTS</h25> -->
+            </div>
+            <div class="down-list-items">
+                <h5 id="role"><ion-icon name="add-circle-outline" class="icon-item"></ion-icon></h5>
+                <h5 id="logout"><ion-icon name="log-out-outline" class="icon-item"></ion-icon>LogOut</h5>
+            </div>
+        </div>
+        <div class="right-nav">
+            <div class="salutation">
+                <h1 id="salamu"></h1>
+            </div>
+            <div id="dashboard-content">
+               
+                <div class="teams">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

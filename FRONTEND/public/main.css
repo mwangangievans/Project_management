@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.main{
+    /* height: 100vh;
+    width: 100%; */
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)) ,url(./images/background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    /* display: none; */
+}
+.top-nav
+{
+    margin-top: -2rem;
+    background-color: #111222;
+    height: 12vh;
+    width: 100%;
+    position: relative;
+}
+ion-icon {
+    font-size: 60px;
+    color: #99ff4b;
+    --ionicon-stroke-width: 16px;
+  }
+  .header 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: initial;
+  }
+  .logo
+  {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .auth h4:hover{
+    color: #99ff4b;
+    cursor: pointer;
+    /* border-bottom: solid 2px white; */
+  }
+  .auth
+  {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+.content
+{
+text-align: left;
+margin-top: 5%;
+flex-direction: column;
+}
+.description-1 h1
+{
+margin-top: 5%;
+font-family: 'Cormorant', serif;
+font-style:var(--ionicon-stroke-width);
+font-size: larger;
+}
+.description-2 h2
+{
+margin-top: 10%;
+opacity: .5;
+}
+.description-3 button
+{
+margin-top: 5%;
+width: 10rem;
+height: 5rem;
+background-color: #99ff4b;
+border-radius: 5px;
+}
+.description-3 button :hover
+{
+    cursor: pointer;
+}
+.login-section
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #111222;
+    display: none;
+}
+.form-div
+{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+    height: 50vh;
+}
+.form-div ion-icon 
+{
+    margin-top: 3rem;
+}
+.login-form
+{
+    background-color:#242633;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin-top: 1rem;
+
+}
+#validation-message
+{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: red;
+    display: none;
+}
+#validation-email
+{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: red;
+    display: none;
+}
+#validation-message-register
+{
+   
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: red;
+    display: none; 
+}
+#validation-email-register
+{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: red;
+    display: none; 
+}
+#validation-userExist
+{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: red;
+    display: none; 
+}
+#registerSuccess
+{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color:green;
+    display: none; 
+    font-weight: 900;
+}
+.form
+{
+    float: left;
+    margin: 10% 5%;
+    width: 90%;
+}
+.email-input
+{
+    width: 100%;
+    
+}
+.email-input label
+{
+    float: left;
+    /* margin-top: 2rem; */
+}
+.email-input input
+{
+    float: left;
+    width: 100%;
+    height: 2rem;
+    background-color: #242633;
+  color: white;
+    border: solid 0.5px white;
+}
+.password-input
+{
+    width: 100%;
+    margin-top: 3rem;
+}
+.password-input label
+{
+    float: left;
+}
+.password-input input
+{
+    float: left;
+    width: 100%;
+    height: 2rem;
+    background-color: #242633;
+    border: solid 0.5px white;
+    color: white;
+
+
+}
+.submit-btn button
+{
+    width: 100%; 
+    background-color: #99ff4b;
+    margin-top: 2rem;
+    height: 2rem;
+
+}
+.submit-btn button :hover
+{
+   cursor: pointer;
+}
+/* register css */
+.register-section
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #111222;
+    display: none;
+}
+.form-div-register
+{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+    height: 60vh;
+}
+.form-div-register ion-icon 
+{
+    margin-top: 3rem;
+}
+/*---------------------DASHBOARD CSS---------------- */
+
+.dashboard
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.up-list-items h5
+{
+ font-size:small;
+ margin-top: 1rem;
+ cursor: pointer;
+ vertical-align:middle;
+
+}
+/* .up-list-items ion-icon
+{
+    font-size: 40px;
+    color: #99ff4b;
+    --ionicon-stroke-width: 16px;
+} */
+.left-nav
+{
+    background-color: #000000;
+    color: gainsboro;
+    width: 15%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.down-list-items h5
+{
+   margin-bottom: 2rem;
+   cursor: pointer;
+}
+.icon-item
+{
+    color:#99ff4b;
+    font-size: 15px;
+    padding: 0 2%;
+
+}
+.right-nav
+{
+    width: 100%;
+    background-color: #111222
+    ;
+    height: 100vh;
+}
+.salutation
+{
+    background-color: #242633;
+    height: 10%;
+}
+.salutation h1
+{
+    color: white;
+}
+/* ======table css-========================== */
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/* body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background: rgba( 71, 147, 227, 1);
+} */
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+.home-content
+{
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: space-between; */
+}
+#logo-role{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    color:#99ff4b;
+    font-weight: 900;
+    
+}
+.danger{
+    background-color: red;
+    line-height: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+.green{
+    background-color:#99ff4b;
+    line-height: 1rem;
+    width: 2rem;
+    border-radius: 5px;
+    color: black;
+}
+
+td{
+    color: #fff;
+}
+th{
+    color: #99ff4b;
+}
+.projo{
+    color: #99ff4b;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#team_list{
+    display: none;
+}
+.aling-projects{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+/* card====== */
+.projectContainer{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+
+}
+
+
+
+.aProject{
+
+    display: flex;
+
+    flex-direction: column;
+
+    border: solid 2px #99ff4b ;
+
+    padding: 10px;
+
+    align-items: center;
+
+    width: 250px;
+
+    height: 200px;
+
+    gap: 10px;
+
+    border-radius: 20px;
+
+}
+
+.deleteProject,.assignProject{
+
+    height: 50px;
+
+    width: 180px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    outline: none;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #99ff4b;
+
+
+
+}

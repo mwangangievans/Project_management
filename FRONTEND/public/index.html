@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <section id="main" class="main">
+        <section class="top-nav">
+            <div class="header container">
+                <div class="logo">
+                    <ion-icon name="logo-stackoverflow"></ion-icon>
+                    <h1>Project Tracker</h1>
+                </div>
+                <div class="auth">
+                    <div class="logon">
+                        <h4 id="Login-btn">Login</h4>
+                    </div>
+                    <div class="register">
+                        <h4 id="register-btn">register</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="content container">
+                <div class="description-1">
+                    <h1>Project & Work Management
+                        Software <br> for All Teams</h1>
+                </div>
+                <div class="description-2">
+                    <h2>Plan projects and manage resources <br> with powerful features that your <br> whole team can
+                        use.</h2>
+                </div>
+                <div class="description-3">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- login section -->
+
+
+    <section id="login-section" class="login-section">
+        <div class="form-div">
+            <ion-icon name="logo-stackoverflow"></ion-icon>
+            <h3 class="login-heading">Sign in to Project Tracker</h3>
+            
+            <div class="login-form">
+                <small id="validation-message">Invalid Email or Password. Please check and try again.</small>
+                <small id="validation-email">Invalid Email .Please check and try again.</small>
+                <small id="validation-email"></small>
+                <form action="" class="form">
+                    <div class="email-input">
+                        <label for="user_email">USER EMAIL</label><br>
+                        <input type="text" id="user_email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="password-input">
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" id="user_password" placeholder="Enter Your Password">
+                    </div><br>
+                    <div class="submit-btn">
+                        <button type="submit" id="submit">
+                            <p class="text">Sign In</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- registration section -->
+
+    <section id="register-section" class="register-section">
+        <div class="form-div-register">
+            <ion-icon name="logo-stackoverflow"></ion-icon>
+            <h3 class="login-heading">Sign Up to Project Tracker</h3>
+            <div class="login-form">
+                <small id="validation-message-register">Invalid Email or Password. Please check and try again.</small>
+                    <small id="validation-email-register">Invalid Email .Please check and try again.</small>
+                    <small id="validation-userExist"></small>
+                    <small id="registerSuccess"></small>
+
+                <form action="" class="form">
+                    <div class="email-input">
+                        <label for="user_email">USER EMAIL</label><br>
+                        <input type="text"  id="register_EMAIL" placeholder="Enter Your Email">
+                    </div>
+                    <div class="password-input">
+                        <label for="password">USER NAME</label><br>
+                        <input type="text"  id="register_NAEME"  placeholder="Enter Your USER NAME">
+                    </div><br>
+                    <div class="password-input">
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password"  id="register_PASSWORD" placeholder="Enter Your Password">
+                    </div><br>
+                    <div class="submit-btn">
+                        <button type="submit" id="register-form-data">
+                            <p class="text">Sign Up</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
